@@ -8,10 +8,11 @@ import java.util.Arrays;
 class Practise {
     public static void main(String[] args) {
 
-Solution1 s1 = new Solution1();
-        char[] sq = {'h', 'e', 'l', 'l', 'o'};
-        s1.reverseString(sq);
-        System.out.println(sq);
+Solution2 s1 = new Solution2();
+        int[] sq = {1,4,2,3};
+        int n = sq.length;
+        s1.findSecondMax(sq);
+        System.out.println(sq[n-2]);
     }
 
 }
@@ -56,5 +57,13 @@ class Solution1 {
             s[i]=s[n-i-1];
             s[n-i-1]=temp;
         }
+    }
+}
+
+class Solution2 {
+    public static int findSecondMax(int[] arr) {
+        int n = arr.length;
+        Arrays.sort(arr);
+        return arr[n - 2];
     }
 }
