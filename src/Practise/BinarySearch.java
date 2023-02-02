@@ -67,3 +67,14 @@ class Solution2 {
         return arr[n - 2];
     }
 }
+
+//How to reverse a String in java using recursion
+class Solution3{
+    public String reverseWords(String s) {
+ //split method splits a string into an array of substrings based on a specified delimiter.
+        // In this case, s.split(" ") splits the input string s into an array of substrings based on spaces " ".
+        // The result of this split is assigned to the words array.
+        String[] words= s.split(" ");
+
+    }
+}
