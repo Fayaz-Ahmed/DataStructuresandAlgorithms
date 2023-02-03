@@ -8,11 +8,10 @@ import java.util.Arrays;
 class Practise {
     public static void main(String[] args) {
 
-Solution2 s1 = new Solution2();
-        int[] sq = {1,4,2,3};
-        int n = sq.length;
-        s1.findSecondMax(sq);
-        System.out.println(sq[n-2]);
+        Solution3 s1 = new Solution3();
+        String s = "Let's take LeetCode contest";
+        s1.reverseWords(s);
+        System.out.println(s);
     }
 
 }
@@ -51,11 +50,11 @@ class Solution {
 // Reverse String
 class Solution1 {
     public void reverseString(char[] s) {
-        int n=s.length;
-        for (int i = 0; i < n / 2; i++){
+        int n = s.length;
+        for (int i = 0; i < n / 2; i++) {
             char temp = s[i];
-            s[i]=s[n-i-1];
-            s[n-i-1]=temp;
+            s[i] = s[n - i - 1];
+            s[n - i - 1] = temp;
         }
     }
 }
@@ -69,12 +68,19 @@ class Solution2 {
 }
 
 //How to reverse a String in java using recursion
-class Solution3{
+class Solution3 {
     public String reverseWords(String s) {
- //split method splits a string into an array of substrings based on a specified delimiter.
+        //split method splits a string into an array of substrings based on a specified delimiter.
         // In this case, s.split(" ") splits the input string s into an array of substrings based on spaces " ".
         // The result of this split is assigned to the words array.
-        String[] words= s.split(" ");
-
+        String[] words = s.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (String word : words) {
+            for (int i = word.length() - 1; i >= 0; i--) {
+                result.append(word.charAt(i));
+            }
+            result.append(" ");
+        }
+        return result.toString().trim();
     }
 }
