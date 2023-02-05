@@ -8,10 +8,6 @@ import java.util.Arrays;
 class Practise {
     public static void main(String[] args) {
 
-//        Solution3 s1 = new Solution3();
-//        String s = "Let's take LeetCode contest";
-//        s1.reverseWords(s);
-//        System.out.println(s);
     }
 
 }
