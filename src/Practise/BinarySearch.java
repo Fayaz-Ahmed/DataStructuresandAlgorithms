@@ -80,3 +80,10 @@ class Solution3 {
         return result.toString().trim();
     }
 }
+
+class Solution4 {
+    public static int secondMax(int[] arr) {
+        Arrays.sort(arr);
+        return arr[arr.length - 2];
+    }
+}
