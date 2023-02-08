@@ -1,12 +1,23 @@
 package Practise;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Fayaz Ahmed
  */
 class Practise {
     public static void main(String[] args) {
+//        int[] array = {1, 2, 3, 2, 3, 1, 4};
+//        Map<Integer, Integer> frequencyMap = new HashMap<>();
+//
+//        for (int i : array) {
+//            int count = frequencyMap.getOrDefault(i, 0);
+//            frequencyMap.put(i, count + 1);
+//        }
+//
+//        System.out.println(frequencyMap);
 
     }
 
@@ -87,3 +98,6 @@ class Solution4 {
         return arr[arr.length - 2];
     }
 }
+
+
+
